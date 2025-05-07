@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            color: darkblue;
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+            /* You can also add border, margin, etc. here */
+        }
+
+        .highlight {
+            color: green;
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        #special-para {
+            background-color: yellow;
+            font-family: monospace;
+            color: red;
+            padding: 15px;
+            border: 2px solid black;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <!-- Inline CSS Example -->
+    <h1 style="border: 2px dashed rgb(11, 12, 9);">Welcome to My CSS Page</h1>
+    <!-- Here, inline CSS is highest in priority -->
+
+    <h2 class="highlight">Learning CSS Step by Step</h2>
+    <!-- You can also use <p>, <div>, <span> here with class="highlight" to reuse styles -->
+
+    <p id="special-para">This is a special paragraph using ID selector. <br /><br />
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum praesentium aliquid sint voluptas accusamus. Sint, totam nulla maiores nihil ratione maxime ex nemo quae omnis saepe, quasi, ullam deleniti molestiae.
+    </p>
+    <!-- ID selectors are unique and have high priority -->
+
+    <p>This paragraph uses default styles from external CSS.<br /><br />
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In placeat enim ipsum! Tempora fuga eius error porro quae! Vel molestiae nulla, nesciunt ipsam atque temporibus possimus officiis praesentium ad quas.
+    </p>
+
+    <div class="box">
+        This is a styled <strong>box</strong> using the <code>.box</code> class.
+    </div>
+       
+</body>
+</html>
