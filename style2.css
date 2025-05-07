@@ -1,0 +1,32 @@
+/* Universal selector - applies to all elements */
+* {
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Element selector */
+p {
+    font-size: 18px;
+    color: navy;
+    background-color: #e0f7fa;
+    /* here you can add bachground image for the paragraph too by pasting the reletive path or image address in url() */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Example: Adding background image */
+body {
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    /* You can use any image URL */
+    background-repeat: repeat;
+}
+
+/* You can also use this class for other elements */
+.box {
+    width: 300px;
+    height: 150px;
+    border: 3px solid orange;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: beige;
+}
