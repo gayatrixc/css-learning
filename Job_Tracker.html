@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Tracker Dashboard</title>
+  <style>
+    /* Reset & Base Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2f3542;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+    }
+
+    nav {
+      background: #57606f;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #2f3542;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    /* Form Styling */
+    form {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #2ed573;
+      color: #fff;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #28a745;
+    }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #70a1ff;
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2f3542;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Job Tracker Dashboard</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#add-job">Add Job</a>
+    <a href="#job-list">Job List</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Add Job Form -->
+    <section id="add-job">
+      <h2>Add New Job Application</h2>
+      <form>
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company" required minlength="2">
+
+        <label for="position">Job Title / Position:</label>
+        <input type="text" id="position" name="position" required>
+
+        <label for="date">Date Applied:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="status">Application Status:</label>
+        <select id="status" name="status" required>
+          <option value="">-- Select --</option>
+          <option value="Applied">Applied</option>
+          <option value="Interview Scheduled">Interview Scheduled</option>
+          <option value="Interviewed">Interviewed</option>
+          <option value="Offer Received">Offer Received</option>
+          <option value="Rejected">Rejected</option>
+        </select>
+
+        <label for="rounds">Number of Rounds Attended:</label>
+        <input type="number" id="rounds" name="rounds" min="0" max="10" required>
+
+        <input type="submit" value="Add Job">
+      </form>
+    </section>
+
+    <!-- Job List Table -->
+    <section id="job-list">
+      <h2>My Job Applications</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Date Applied</th>
+            <th>Status</th>
+            <th>Rounds</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TCS</td>
+            <td>Software Engineer</td>
+            <td>2025-04-01</td>
+            <td>Interview Scheduled</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Infosys</td>
+            <td>System Analyst</td>
+            <td>2025-04-05</td>
+            <td>Applied</td>
+            <td>0</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Gayatri | Job Tracker Project</p>
+  </footer>
+
+</body>
+</html>
