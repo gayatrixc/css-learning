@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio - Gayatri</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #1a1919;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #aeb2bd;
+      color: #e2f8fbfd;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #454747;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: #161719;
+    }
+
+    .projects, .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 250px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+
+    #contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #contact input, #contact textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    #contact button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #contact button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gayatri's Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a passionate Electronics and Communication Engineering student with a strong interest in Machine Learning and Web Development. I love building intelligent systems and clean, user-friendly websites.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="card">C Programming</div>
+        <div class="card">Python & ML</div>
+        <div class="card">HTML & CSS</div>
+        <div class="card">Data Visualization</div>
+        <div class="card">Java (Learning)</div>
+        <div class="card">XGBoost, SVM</div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Breast Cancer Detection</h3>
+          <p>Built a machine learning model using XGBoost and scikit-learn to predict tumor malignancy.</p>
+        </div>
+        <div class="card">
+          <h3>Portfolio Website</h3>
+          <p>Designed and developed this responsive portfolio website to showcase my skills, projects, and contact information.</p>
+        </div>
+        <div class="card">
+          <h3>GSM-Based Security System</h3>
+          <p>Developed a system using RFID & GSM modules to track school children's entry and exit securely.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>If you'd like to collaborate, ask questions, or just say hi — I'm happy to hear from you!</p>
+      <form action="mailto:gayatrixc@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gayatri | Built with 💙 in HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
