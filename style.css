@@ -1,0 +1,45 @@
+*{
+    font-family: "Oswald", sans-serif;
+}
+
+p{
+    color: rgb(64, 58, 58);
+    background-color: rgb(48, 159, 181);
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-size: 20px;
+    font-weight: 600;
+    font-variant: small-caps;
+    background-image: url(https://brixtonforged.com/wp-content/uploads/2022/07/brixton-forged-mclaren-720s-cm6-r-targa-sq.jpg);
+    /* instead of relative path we can just copy image address by right clicking on the image */
+    background-size: cover;
+    background-position: left;
+    height: 400px;
+    width: 500px;
+    overflow: auto;
+
+}
+h1{
+    color: rgb(64, 6, 118);
+    font-size: 38px;
+    background-color: rgb(163, 158, 182);
+    height: 100px;
+    width: 100px;
+    padding: 50px;
+    border: 5px solid black;
+    margin: auto;
+}
+h2{
+    color: rgb(156, 116, 23);
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 35px;
+    font-style: italic;
+}
+.color{
+    color: rgb(8, 51, 243);
+}
+#orange{
+    color: rgb(231, 249, 156);
+    background-color: hotpink;
+    font-style: italic;
+    font-family: monospace;
+}
